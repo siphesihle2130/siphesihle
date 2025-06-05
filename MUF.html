@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MUF</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="web.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+.body{
+background-color:#2e2e2e;
+} 
+h1,h2,h3,h4,h5,h6 {
+font-family: "bell mt", serif;
+}
+.w3-row-padding img {
+margin-bottom: 12px
+}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {
+width: 120px;background: #222;
+}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {
+margin-left: 120px
+}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+.circle {
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+.cnf-circle {
+    width: 400px;
+    height: 400px;
+    background-image:url('multimedia.jpeg');
+}
+.cnf-circlet {
+    width: 400px;
+    height: 400px;
+    background-image:url('Grass.jpg');
+	margin-left: 100px;
+}
+.cnf-circle2 {
+    width: 400px;
+    height: 400px;
+    background-image:url('OIP.webp');
+}
+.cnf-circle3 {
+    width: 400px;
+    height: 400px;
+    background-image:url('storyboard.png');
+}
+.video-container {
+            position: relative;
+            width: 300px; /* Width of the circle */
+            height: 300px; /* Height of the circle */
+            border-radius: 50%; /* Makes the container circular */
+            overflow: hidden; /* Ensures video stays inside the circle */
+            margin: 0 auto; /* Centers the video on the page */
+        }
+/* Style to make the video fit inside the circle */
+.video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the video covers the entire container */
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+.profp {
+    font-size: 15px;
+    color: #ffff;
+	font-family: 'montserrat', san-serif;
+}
+.terminator-rect {
+            width: 450px;               /* Set the width of the rectangle */
+            height: 80px;              /* Set the height of the rectangle */
+            background-color: #ff5733;  /* Set the background color */
+			background-image: linear-gradient(#ff5733, #2e2e2e);
+            border-radius: 60px;        /* Rounded corners for a terminator shape */
+            display: flex;              /* Use flexbox for centering text */
+            justify-content: center;    /* Center the text horizontally */
+            align-items: center;        /* Center the text vertically */
+            position: absolute;
+			left:52%;
+			top:0px;
+            margin: 20px;			/* Add margin around the shape */
+			transform:rotate(150deg);
+}
+.terminator-rect2 {
+            width: 400px;               /* Set the width of the rectangle */
+            height: 80px;              /* Set the height of the rectangle */
+            background-color: #ff5733;  /* Set the background color */
+			background-image: linear-gradient(#ff5733, #2e2e2e);
+            border-radius: 60px;        /* Rounded corners for a terminator shape */
+            display: flex;              /* Use flexbox for centering text */
+			justify-content: center;    /* Center the text horizontally */
+            align-items: center;        /* Center the text vertically */
+            position: absolute;
+			left:80%;
+			top:850px;
+            margin: 20px;			/* Add margin around the shape */
+			transform:rotate(150deg);
+}
+.head{
+font-size:40px;
+}
+.button2 {
+position: absolute;
+left:1150px;
+}
+#multimedia {
+	background-color:#2e2e2e;
+}
+#concept {
+	background-color: #2e2e2e;
+}
+#brandguide {
+	background-color:#2e2e2e;
+}
+#storyboard {
+	background-color: #2e2e2e;
+}
+#video {
+	background-color: #2e2e2e;
+}
+.w3-half {
+  margin-top: 80px; /* Adjust this value to control the spacing */
+}
+</style>
+</head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <!-- Avatar image in top left corner -->
+  <a href="MUF-website.html"><img src="logo2.jpeg" alt="logo" style="width:8.5vw; height:8.5vw" class="w3-jumbo w3-bar-item w3-hover-dark-gray"></a>
+  
+  <a href="web.html#home" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-gray">
+    <i class="fa fa-home w3-jumbo"></i>
+    <p style="font-size:150%">Home</p>
+  </a>
+  <a href="MUF-website.html#about" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-gray">
+    <i class="fa fa-user w3-jumbo"></i>
+    <p style="font-size:150%">About</p>
+  </a>
+  <a href="MUF-website.html#portfolio" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-gray">
+    <i class="fa fa-th-large w3-jumbo"></i>
+    <p style="font-size:150%">Portfolio</p>
+  </a>
+  <a href="MUF-website.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-gray">
+    <i class="fa fa-envelope w3-jumbo"></i>
+    <p style="font-size:150%">Contact</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="MUF-website.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="MUF-website.html" class="w3-bar-item w3-button" style="width:25% !important">PROF</a>
+    <a href="MUF-website.html" class="w3-bar-item w3-button" style="width:25% !important">MUF</a>
+    <a href="MUF-website.html" class="w3-bar-item w3-button" style="width:25% !important">CNF</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-16" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    	<div class="w3-container w3-padding-32 w3-center w3-black" id="multimedia">
+	<section class="w3-content w3-justify w3-text-grey w3-padding-64">
+    <div class="w3-row-padding" style="margin:0 -16px">
+      
+	  <div class="terminator-rect"></div>
+	  <div class="w3-half margin-top: 80px">
+        <ul class="w3-ul w3-center w3-hover-opacity-off">
+        <li class="w3-padding-32"><h2 class="Head">Multimedia Founations 1</h2></li>
+        </ul>
+      </div>
+	  <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul">
+			<li>
+				<div class="circle cnf-circle"></div>
+			</li>
+		</ul>
+      </div>
+    </div>
+	</section>
+  </div>
+  </header>
+  <!-- About Section -->
+  
+	
+	<div class="divider"></div>
+	
+    <!-- Grid for pricing tables -->
+	<div class="w3-container w3-padding-32 w3-center w3-black" id="concept">
+	<section class="w3-content w3-justify w3-text-grey w3-padding-64">
+    <div class="w3-row-padding" style="margin:0 -16px">
+	<div class="terminator-rect2"></div>
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul">
+			<li>
+				<div class="circle cnf-circle2"></div>
+			</li>
+		</ul>
+      </div>
+
+	  <div class="w3-half">
+	  <h2 class="w3-center">Business concept.</h2>
+        <ul class="w3-ul w3-left w3-hover-opacity-off">
+          <li class="w3-padding-16"><div class="profp">This was a group assignment requiring 
+			students must conceptualise a business idea that fills a gap in the market (something that can
+			be an actual business), it can also be a cause for an NGO/NPO.<br>
+			click the button below for more information!</div>
+			<a href="MUF-gallery.html#concept" class="w3-button w3-light-grey w3-padding-large w3-section">View more</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+	</section>
+  </div>
+  
+	<div class="divider"></div>
+	
+	<div class="w3-container w3-padding-32 w3-center w3-black" id="brandguide">
+	<section class="w3-content w3-justify w3-text-grey w3-padding-64">
+    <div class="w3-row-padding" style="margin:0 -16px">
+      
+	  <div class="terminator-rect"></div>
+	  <div class="w3-half">
+	  <h2 class="w3-center">Brandguide.</h2>
+        <ul class="w3-ul w3-left w3-hover-opacity-off">
+		<li class="w3-padding-16"><div class="profp">This was a group assignment requiring us to make a full brand guide for our business.
+		  Using what we have created in the first part of the project.
+		  click the button below to view the full document!</div>
+		  <a href="MUF-gallery.html#brandguide" class="w3-button w3-light-grey w3-padding-large w3-section">View more</a>
+		</li>
+        </ul>
+      </div>
+	  <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul">
+			<li>
+				<div class="circle cnf-circlet"></div>
+			</li>
+		</ul>
+      </div>
+    </div>
+	</section>
+  </div>
+  
+  <div class="divider"></div>
+  
+  <div class="w3-container w3-padding-32 w3-center w3-black" id="storyboard">
+	<section class="w3-content w3-justify w3-text-grey w3-padding-64">
+    <div class="w3-row-padding" style="margin:0 -16px">
+	<div class="terminator-rect2"></div>
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul">
+			<li>
+				<div class="circle cnf-circle3"></div>
+			</li>
+		</ul>
+      </div>
+
+	  <div class="w3-half">
+	  <h2 class="w3-center">Storyboard.</h2>
+        <ul class="w3-ul w3-left w3-hover-opacity-off">
+          <li class="w3-padding-16"><div class="profp">A storyboard is a visual representation that:
+			Consists of illustrations or images displayed in sequence.<br>
+			Pre-visualizes a motion picture, animation, or interactive media sequence.<br>
+			Breaks down the action into individual panels.<br>
+			Organizes a sequence of images to tell a story or explain a process.<br>
+		    click the button below for more information!</div>
+			<a href="MUF-gallery.html#storyboard" class="w3-button w3-light-grey w3-padding-large w3-section">View more</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+	</section>
+  </div>
+  
+  <div class="divider"></div>
+  
+  <div class="w3-container w3-padding-32 w3-center w3-black" id="video">
+	<section class="w3-content w3-justify w3-text-grey w3-padding-64">
+    <div class="w3-row-padding" style="margin:0 -16px">
+      
+	  <div class="terminator-rect"></div>
+	  <div class="w3-half">
+	  <h2 class="w3-center">Brandguide.</h2>
+        <ul class="w3-ul w3-left w3-hover-opacity-off">
+		<li class="w3-padding-16"><div class="profp">This was a group assignment,as a group we were required to 
+		create a dynamic and engaging advertisement video tailored for TikTok, leveraging the unique features
+		and audience of the platform to promote our established business idea<br>
+		  click the button below for more information!</div>
+		  <a href="MUF-gallery.html#video" class="w3-button w3-light-grey w3-padding-large w3-section">View more</a>
+		</li>
+        </ul>
+      </div>
+	  <div class="w3-half w3-margin-bottom">
+    <ul class="w3-ul">
+        <li>
+            <div class="video-container">
+                <video autoplay muted loop>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </li>
+    </ul>
+</div>
+    </div>
+	
+	<a href="CNF.html" class="w3-button w3-light-grey w3-padding-large w3-section" style="margin-left:950px; ">Next <i class="fa fa-arrow-right"></i></a>
+	
+	<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+			<i class="fa fa-facebook-official w3-hover-opacity"></i>
+			<i class="fa fa-instagram w3-hover-opacity"></i>
+			<i class="fa fa-snapchat w3-hover-opacity"></i>
+			<i class="fa fa-twitter w3-hover-opacity"></i>
+			<i class="fa fa-linkedin w3-hover-opacity"></i>
+  <!-- End footer -->
+  </footer>
+	</section>
+  </div>
+  </div>
+<!-- END PAGE CONTENT -->
+</body>
+</html>
